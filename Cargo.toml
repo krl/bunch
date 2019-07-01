@@ -1,0 +1,13 @@
+[package]
+authors = ["Kristoffer Ström <kristoffer@rymdkoloni.se>"]
+edition = "2018"
+name = "bunch"
+version = "0.1.0"
+description = "Append-only, concurrent arena"
+keywords = ["arena", "datastructure"]
+documentation = "https://docs.rs/bunch/"
+license = "GPL-3.0"
+
+[dependencies]
+arrayvec = "0.4"
+parking_lot = "0.4"
