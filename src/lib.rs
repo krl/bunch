@@ -32,8 +32,8 @@ impl<T> Default for Bunch<T> {
     }
 }
 
-unsafe impl<T> Send for Bunch<T> {}
-unsafe impl<T> Sync for Bunch<T> {}
+unsafe impl<T: Send> Send for Bunch<T> {}
+unsafe impl<T: Sync> Sync for Bunch<T> {}
 
 /// The main Arena type
 pub struct Bunch<T> {
